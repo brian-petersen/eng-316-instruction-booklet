@@ -37,9 +37,9 @@
   padding: 40px 28px;
 }
 
-.demo-content h3 {
-  margin-top: 48px;
-}
+// .demo-content h3 {
+//   margin-top: 48px;
+// }
 
 .demo-footer {
   padding-left: 40px;
@@ -50,12 +50,12 @@
 }
 
 /* My Styles */
-body {
-  counter-reset: item;
-}
+// body {
+// }
 
 ol.instruction-set {
   list-style: none;
+  counter-reset: item;
 
   li {
     margin-top: 15px;
@@ -67,22 +67,23 @@ ol.instruction-set {
     &:before {
       content: counter(item);
       position: absolute;
-      left: -38px;
+      top: -2px;
+      left: -35px;
       color: #ffffff;
       text-align: center;
-      font-size: 19px;
-      width: 28px;
-      line-height: 28px;
+      font-size: 15px;
+      width: 26px;
+      line-height: 26px;
       border-radius: 50%;
       background-color: #424242;
     }
 
     span:not(.shortcut) {
       font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 400;
-      line-height: 25px;
-      
+      line-height: 20px;
+
       display: block;
       margin-bottom: 7px;
     }
@@ -91,7 +92,7 @@ ol.instruction-set {
       max-width: 100%;
     }
 
-    p {     
+    p {
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 7px;
