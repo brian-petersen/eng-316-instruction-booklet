@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    hljs.initHighlightingOnLoad();
+    hljs.initHighlighting();
 
     // $('pre code').click(function() {
     //     var refNode = jQuery( this )[0];
