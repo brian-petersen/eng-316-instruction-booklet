@@ -106,6 +106,7 @@ gulp.task('styles', () => {
 // `.babelrc` file.
 gulp.task('scripts', () =>
     gulp.src([
+      './app/scripts/lib/jquery-3.1.1.slim.min.js',
       './app/scripts/lib/highlight.pack.js',
       './app/scripts/main.js'
     ])

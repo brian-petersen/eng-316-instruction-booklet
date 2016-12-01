@@ -12,38 +12,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
     <link rel="stylesheet" href="styles/main.css">
-
   </head>
   <body>
-
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Python: The World's Programming Language</span>
-          <!-- <div class="mdl-layout-spacer"></div> -->
-          <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable"> -->
-          <!--   <label class="mdl-button mdl-js-button mdl-button--icon" for="search"> -->
-          <!--     <i class="material-icons">search</i> -->
-          <!--   </label> -->
-          <!--   <div class="mdl-textfield__expandable-holder"> -->
-          <!--     <input class="mdl-textfield__input" type="text" id="search"> -->
-          <!--     <label class="mdl-textfield__label" for="search">Enter your query...</label> -->
-          <!--   </div> -->
-          <!-- </div> -->
         </div>
       </header>
       <div class="demo-ribbon"></div>
-
       <main class="demo-main mdl-layout__content">
-        <div class="demo-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="demo-container">
           <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <!-- <div class="demo-crumbs mdl-color-text--grey-500">
-              Google &gt; Material Design Lite &gt; How to install MDL
-            </div> -->
-
-            <!-- <h1>Python: The World's Programming Language</h1> -->
-
             <h3>Programming with Python</h3>
             <p>
               The Python programming language is gaining popularity as a fundamental tool for scientific computing. Python cuts out some unnecessary syntax that other languages require, which lends to its relative simplicity. Not only is it simple to write, it is easy to learn.
@@ -92,7 +72,7 @@
                 <img src="images/mac-install/4.png" alt="">
               </li>
               <li>
-                <span>Enter password if prompted.</span>
+                <span>Enter your password if prompted.</span>
                 <img src="images/mac-install/5.png" alt="">
                 <p>The installation will begin and make take a few minutes. Once finished, you should see:</p>
                 <img src="images/mac-install/6.png" alt="">
@@ -120,7 +100,7 @@
 
             <h3>"Hello, World!" - Your First Program</h3>
             <p>
-              "Hello, World!" is a simple computer program that beginners write to learn how to use programming tools like IDLE. You should already have IDLE open and launched from the installation if not then refer back to <a href="#step-9a">Step 9</a> from above.
+              "Hello, World!" is a simple computer program that beginners write to learn how to use programming tools like IDLE. You should already have IDLE open and launched from the installation. If not then refer back to <a href="#step-9a">Step 9</a> from above.
             </p>
             <p>
               The goal of this program is to <i>create</i> and <i>run</i> code that says “Hello, World!” Literally. After you should be familiar with the following concepts in IDLE.
@@ -130,7 +110,7 @@
               <li>Creating a new program</li>
               <li>Saving your code</li>
               <li>Running your code</li>
-              <li>Viewing the result of your program in the console window</li>
+              <li>Viewing the result of your program in the IDLE window</li>
             </ul>
 
             <ol class="instruction-set">
@@ -190,7 +170,7 @@
               <li>Variables</li>
               <li>Accept input from the user</li>
               <li><code>if</code> statements</li>
-              <li>Formatting a <code>print</code></li>
+              <li>Formatting a <code>print</code> statement</li>
             </ul>
 
             <ol class="instruction-set">
@@ -323,6 +303,7 @@ if variable2 > variable1:
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
     <!-- build:js scripts/main.min.js -->
+    <script src="scripts/lib/jquery-3.1.1.slim.min.js"></script>
     <script src="scripts/lib/highlight.pack.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
