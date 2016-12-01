@@ -114,7 +114,6 @@
             <p>
               In the previous section you installed and launched IDLE! Using this program we will teach you the most basic principles of coding. Although there are many programming languages, Python is one of the more popular languages.
             </p>
-
             <p>
               Below are guides to help you through your first two programming experiences using IDLE. To start, we need to learn how to use IDLE, how to <i>create</i> and <i>run</i> code.
             </p>
@@ -142,7 +141,7 @@
               </li>
               <li id="step-2b">
                 <span>Copy and paste the code below into the new file.</span>
-                <code><pre>print('Hello, World!')</pre></code>
+                <pre><code>print('Hello, World!')</code></pre>
                 <p>
                   The code above types/prints "Hello, World!" to IDLE window. It uses a function called <code>print</code> to do so. Each programming language is different, so this only works in Python.
                 </p>
@@ -162,7 +161,7 @@
               </li>
               <li>
                 <span>Change your code to the example provided below and rerun your code.</span>
-                <code><pre>print('Hi, World!')</pre></code>
+                <pre><code>print('Hi, World!')</code></pre>
 
                 <p>
                   Changing and re-running the code shows how you can modify your code and run it at anytime.
@@ -180,7 +179,132 @@
               Congratulations! You now know how to make a new file, write your own code, save it, and run it! We’ll now go to the next excerise.
             </p>
 
-            <!-- TODO insert additional tutorial -->
+            <h3>Using <code>if</code> Statements</h3>
+            <p>
+              In this guide we will show you how to create a program that compares two numbers and tells you which of the two numbers is greater (For example, is 3 > 4?). <code>if</code> statements will be used to have the program to compare the two numbers for us and then determine which number is bigger or smaller.
+            </p>
+            <p>
+              This program also introduces new programming functions. After making this program you should be familiar with the following concepts in the Python language.
+            </p>
+            <ul>
+              <li>Variables</li>
+              <li>Accept input from the user</li>
+              <li><code>if</code> statements</li>
+              <li>Formatting a <code>print</code></li>
+            </ul>
+
+            <ol class="instruction-set">
+              <li>
+                <span>Open a new file in IDLE.</span>
+                <p>To open a new file from IDLE go to <code>File > New File</code>.</p>
+                <img src="images/mac-instructions/1.png">
+              </li>
+              <li>
+                <span>Copy and paste the code below into the new file.</span>
+                <pre><code>variable1 = 4
+variable2 = 6</code></pre>
+                <p>
+                  The code above creates two variables named <code>variable1</code> and <code>variable2</code>. Their values are <code>4</code> and <code>6</code>.
+                </p>
+              </li>
+              <li>
+                <span>Replace 4 and 6 with <code>input</code> functions.</span>
+                <p>
+                  We will modify the variables we created to allow the users to type in their own numbers when we run the program. To do this we will use the <code>input</code> function.
+                </p>
+                <p>
+                  ​<code>input​</code> is a function that prints out what is in the parentheses and then waits for the user to type in a value. We want this value to become the value of the variables we have.
+                </p>
+                <p>
+                  To replace <code>4</code> and <code>6</code> with <code>input</code> functions, copy and paste this code.
+                </p>
+                <pre><code>variable1 = input('Type in the first number and press Enter: ')
+variable2 = input('Type in the second number and press Enter: ')</code></pre>
+                <p>
+                  Whatever is typed by the user is then stored into the variable named <code>variable1</code>. This is similar to variable in mathematics. The same happens for <code>variable2</code>.
+                </p>
+                <p>
+                  Feel free to run this program and see how the shell window waits for the user to type in the first number before it moves on to the next number.
+                </p>
+              </li>
+              <li>
+                <span>Add <code>if</code> statements to compare the variables.</span>
+                <p>
+                  The code below is how your code should look after adding the <code>if</code> statements. Copy and paste this code into the new file.
+                </p>
+                <pre><code>variable1 = input('Type in the first number and press Enter: ')
+variable2 = input('Type in the second number and press Enter: ')
+
+if variable1 > variable2:
+if variable2 > variable1:</code></pre>
+                <p>
+                  Above we use the <code>></code> symbol to ask if the variable on the left side is greater than the one to the right. What's important now is that you tell the user if it is by using a <code>print</code> function!
+                </p>
+              </li>
+              <li>
+                <span>Add <code>print</code> functions to inform the user.</span>
+                <p>
+                  The code below is how your code should look after adding the <code>print</code> statements. Copy and paste this code into the new file.
+                </p>
+                <pre><code>variable1 = input('Type in the first number and press Enter: ')
+variable2 = input('Type in the second number and press Enter: ')
+
+if variable1 > variable2:
+    print(variable1 + " is greater than " + variable2 + ".")
+if variable2 > variable1:
+    print(variable2 + " is greater than " + variable1 + ".")</code></pre>
+                <p>
+                  Above we added code after the colons. The code after the colons runs only if the statement expressed is <i>true</i>.
+                </p>
+                <p>
+                  You also see that we use <code>variable1</code> and <code>variable2</code> the <code>print</code> functions. This prints the value that the user typed in. The ​<code>+</code>​ symbol ties that number to the everything else.
+                </p>
+                <p>
+                  For example, if the user types in <code>1</code> and <code>3</code>, the first <code>if</code> statement is false thus does nothing. The second is true and thus prints <code>3 is greater than 1</code>.
+                </p>
+              </li>
+              <li>
+                <span>Review the code.</span>
+                <p>
+                  Below is an example of what your code should look like when you finish.
+                </p>
+                <pre><code>variable1 = input('Type in the first number and press Enter: ')
+variable2 = input('Type in the second number and press Enter: ')
+
+if variable1 > variable2:
+    print(variable1 + " is greater than " + variable2 + ".")
+if variable2 > variable1:
+    print(variable2 + " is greater than " + variable1 + ".")</code></pre>
+                <p>
+                  Feel free to copy and paste the code if you need.
+                </p>
+              </li>
+
+              <li>
+                <span>Run and test the code.</span>
+                <p>
+                  You can run it by going to <code>Run > Run Module</code>. If asked to save your code, name if <code>If Statements</code>
+                </p>
+                <p>
+                  You can now test your code! You should see results similar to the example below.
+                </p>
+                <img src="images/mac-instructions/6b.png">
+              </li>
+              <p>
+                Rerun your code and try different values to make sure it runs correctly!
+              </p>
+            </ol>
+
+            <h3>Where to Go From Here</h3>
+            <p>
+              Congratulations on setting up your Python programming environment! You are on your way to becoming a programmer. As suggested earlier, we recommend using the rich pool of learning resources and Q&A databases that exist online for your programming needs.
+            </p>
+            <p>
+              One indispensable Q&A database is <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a>. This website contains hundreds of thousands of answers covering a wide array of programming questions. So, if you have a coding question, it is likely you can find an answer to a comparable question in this database.
+            </p>
+            <p>
+              If you wish to learn more programming, <a href="https://www.codecademy.com/" target="_blank">Code Academy</a> is a great resource. You can find introductary, intermediate, and advanced Python turorials at <a href="https://www.codecademy.com/learn/python" target="_blank">Code Academy Python</a>. You also can use Google to solve the problems you want to tackle using Python to get simple and effective documentation that will guide you through your coding journey. Have fun coding!
+            </p>
           </div>
         </div>
 
@@ -199,6 +323,7 @@
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
     <!-- build:js scripts/main.min.js -->
+    <script src="scripts/lib/highlight.pack.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
