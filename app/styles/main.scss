@@ -5,15 +5,15 @@
 /* Demo Styles */
 .demo-ribbon {
   width: 100%;
-  height: 40vh;
-  background-color: #3F51B5;
+  height: 50vh;
+  background-color: #456583;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
 
 .demo-main {
-  margin-top: -35vh;
+  margin-top: -40vh;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -52,6 +52,10 @@
 
 /* My Styles */
 
+h2.title {
+  font-size: 40px;
+}
+
 code, pre {
   font-family: monospace;
 }
@@ -74,8 +78,8 @@ ol.instruction-set {
   counter-reset: item;
 
   li {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     position: relative;
     counter-increment: item;
@@ -101,7 +105,7 @@ ol.instruction-set {
       line-height: 20px;
 
       display: block;
-      margin-bottom: 7px;
+      margin-bottom: 10px;
     }
 
     img {
@@ -109,10 +113,8 @@ ol.instruction-set {
     }
 
     p {
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 7px;
-      margin-top: 7px;
+      margin-bottom: 10px;
+      margin-top: 10px;
     }
   }
 }
